@@ -29,7 +29,6 @@ app.post('*',(req,res) => {
         res.send(response)
     }else if(text == '1*1'){
         let accountNumber = 'ACC1001'
-
         let response =  `END Your Account Number is ${accountNumber}`
         res.send(response)
     }else if (text == '1*2'){
