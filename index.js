@@ -12,12 +12,11 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.get('*',(req,res) => {
     res.send('Node Js Application to test USSD programming')
 })
-
 app.post('*',(req,res) => {
     let {sessionId ,serviceCode, phoneNumber, text} = req.body
     if(text == ''){
         let response = `CON what would you want to check
-        1. My Account
+        1. Brian Kamau
         2. My Phone Number`
         res.send(response)
     }else if(text == '1'){
