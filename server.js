@@ -23,7 +23,14 @@ function  processRequest() {
                 1. Book Bus
                 2. Check Reservation`
                 res.send(response);
-            }else{
+            }else if (text == '1'){
+                let response = `CON Please Choose Time for Your Reservation
+                1. 11:00am 
+                2. 3:30pm
+                3. 5:00pm`
+                res.send(response);
+        }
+            else{
                 res.status(400).send('Bad Request');
             }
 
