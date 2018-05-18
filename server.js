@@ -22,7 +22,8 @@ function processBankTransaction(){
             res.send(response);
         }else if(text == '1'){
             account_balance = 'KSH 10,000';
-            res.send(account_balance);
+            let response =  `END Your Account Balance is ${account_balance}`
+            res.send(response);
         }
     });
     app.listen(port,()=>{
