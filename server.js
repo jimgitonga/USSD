@@ -25,6 +25,9 @@ function processBankTransaction(){
             res.send(account_balance);
         }
     });
+    app.listen(port,()=>{
+        console.log(`Listening on port ${port}`)
+    });
 }
 function  processRequest() {
     app.use(logger('dev'))
